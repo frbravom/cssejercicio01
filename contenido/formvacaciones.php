@@ -1,6 +1,8 @@
 <?php
 include('../lib/constantes.php');
 include('../lib/Vacaciones.php');
+session_start();
+
 ?>
 <!DOCTYPE html>
 <!--
@@ -36,7 +38,10 @@ and open the template in the editor.
         <pre>
             <?php
             var_dump($_SESSION["regvacacion"]);
+            
             ?>
+
+
         </pre>
     </body>
 </html>
